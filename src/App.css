@@ -23,10 +23,15 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+#def{
+  display: block;
+}
 
 .App-link {
   color: #61dafb;
 }
+
+.flexRow{display:flex; flex-direction:row;}
 
 @keyframes App-logo-spin {
   from {

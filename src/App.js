@@ -1,18 +1,27 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { Route, Link } from 'react-router-dom';
+
 
 import Home from './components/Home';
-import PetshopApi from './components/PetshopApi'
+import ProductsApi from './components/ProductsApi'
+import UsersApi from './components/UsersApi'
+import CategoriasApi from './components/categoriesApi';
+import CountApi from './components/productsCount';
+
 
 
 
 function App() {
   return (
     <div>
+        <Home/>
         <hr/>
-        <Home />
-        <PetshopApi/>
+        <section className='flexRow'>
+        <ProductsApi/>
+        <UsersApi/>
+        <CategoriasApi/> 
+        </section>
+        <CountApi/>
     </div>
   );
 }
